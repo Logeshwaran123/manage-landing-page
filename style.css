@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* be-vietnam-pro-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/be-vietnam-pro-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/be-vietnam-pro-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/be-vietnam-pro-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --orange-400: hsl(12, 88%, 59%);
+  --blue-950: hsl(228, 39%, 23%);
+  --gray-950: hsl(233, 12%, 13%);
+  --orange-50: hsl(13, 100%, 96%);
+  --gray-50: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background-color: var(--gray-50);
+}
+
+/* -------------- CONTAINER SECTION */
+.container {
+  padding-block: 4em;
+  padding-inline: 10em;
+}
+
+.container img {
+  display: block;
+}
+
+/* -------------- HERO SECTION */
+.hero-section {
+  display: flex;
+  row-gap: 6rem;
+  flex-direction: column;
+}
+
+.navigation {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  background: var(--orange-400);
+  color: var(--gray-50);
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 7px 14px var(--orange-400);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
