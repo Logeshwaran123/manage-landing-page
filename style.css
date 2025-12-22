@@ -37,6 +37,7 @@
   --gray-950: hsl(233, 12%, 13%);
   --orange-50: hsl(13, 100%, 96%);
   --gray-50: hsl(0, 0%, 98%);
+  --txt-tone: hsl(220, 4%, 69%);
 }
 
 html {
@@ -50,18 +51,26 @@ body {
 
 /* -------------- CONTAINER SECTION */
 .container {
+  font-size: 1.15em;
   padding-block: 4em;
-  padding-inline: 10em;
+  padding-inline: 7em;
 }
 
 .container img {
   display: block;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-block: 2rem;
+}
+
 /* -------------- HERO SECTION */
 .hero-section {
   display: flex;
-  row-gap: 6rem;
+  row-gap: 8rem;
   flex-direction: column;
 }
 
@@ -87,11 +96,85 @@ body {
   padding-inline: 2rem;
   padding-block: 1rem;
   border-radius: 50px;
-  box-shadow: 0 7px 14px var(--orange-400);
+  font-size: 1rem;
+  box-shadow: 0 6px 12px rgba(242, 92, 42, 0.35);
 }
 
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.heading-text {
+  font-size: 4rem;
+  line-height: 1.25;
+  letter-spacing: -3px;
+  color: var(--blue-950);
+}
+
+.sub-text {
+  width: 65%;
+  font-size: 0.99em;
+  line-height: 2;
+  color: var(--txt-tone);
+}
+
+.hero-image {
+  display: block;
+  transform: scale(1.15);
+}
+
+.controls {
+  display: none;
+}
+
+/* ------------------- MEDIA QUERIES: SM
+@media screen and (max-width: 24rem) {
+}
+------------------- MEDIA QUERIES: MD
+@media screen and (max-width: 48rem) {
+} */
+/* ------------------- MEDIA QUERIES: LG */
+@media screen and (max-width: 64rem) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    font-size: 1.15em;
+    padding: 0;
+  }
+
+  .hero-image {
+    display: block;
+    transform: scale(1);
+  }
+
+  .navigation .nav-links,
+  .navigation .btn {
+    display: none;
+  }
+
+  .controls {
+    display: block;
+  }
+
+  .hero-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-text {
+    margin-inline: auto;
+  }
 }
