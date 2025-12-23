@@ -129,6 +129,32 @@ p {
   display: none;
 }
 
+/* -------------- FEATURES SECTION */
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.feature-main-content {
+  flex-basis: 480px;
+}
+.features-list-container {
+  flex-basis: 400px;
+}
+
+.feature-list-heading {
+  display: inline-flex;
+}
+
+.feature-list-heading h3 {
+  margin: 0;
+}
+
+.features-section .sub-text {
+  width: auto;
+}
+
 /* ------------------- MEDIA QUERIES: SM
 @media screen and (max-width: 24rem) {
 }
