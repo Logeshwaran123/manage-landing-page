@@ -51,9 +51,8 @@ body {
 
 /* -------------- CONTAINER SECTION */
 .container {
-  font-size: 1.15em;
-  padding-block: 4em;
-  padding-inline: 7em;
+  padding-block: 4rem;
+  padding-inline: 7rem;
 }
 
 .container img {
@@ -123,7 +122,7 @@ p {
 
 .hero-image {
   display: block;
-  transform: scale(1.15);
+  width: 100%;
 }
 
 .controls {
@@ -133,18 +132,19 @@ p {
 /* ------------------- MEDIA QUERIES: SM
 @media screen and (max-width: 24rem) {
 }
-------------------- MEDIA QUERIES: MD
-@media screen and (max-width: 48rem) {
-} */
 /* ------------------- MEDIA QUERIES: LG */
-@media screen and (max-width: 64rem) {
+@media (max-width: 768px) {
   html {
     font-size: 12px;
   }
 
   .container {
-    font-size: 1.15em;
-    padding: 0;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+  }
+
+  .hero-section {
+    row-gap: 4rem;
   }
 
   .hero-image {
@@ -176,5 +176,11 @@ p {
 
   .sub-text {
     margin-inline: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
   }
 }
