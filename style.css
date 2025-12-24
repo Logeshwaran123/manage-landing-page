@@ -66,6 +66,10 @@ p {
   margin-block: 2rem;
 }
 
+section {
+  padding-bottom: 10rem;
+}
+
 /* -------------- HERO SECTION */
 .hero-section {
   display: flex;
@@ -103,7 +107,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  column-gap: 1rem;
 }
 
 .heading-text {
@@ -130,29 +134,50 @@ p {
 }
 
 /* -------------- FEATURES SECTION */
-.features-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.feature-main-content {
-  flex-basis: 480px;
-}
-.features-list-container {
-  flex-basis: 400px;
-}
-
-.feature-list-heading {
-  display: inline-flex;
-}
-
-.feature-list-heading h3 {
-  margin: 0;
-}
-
 .features-section .sub-text {
-  width: auto;
+  width: unset;
+}
+
+.features-section .heading-3-text {
+  margin: unset;
+}
+
+.feature-main-container .sub-text {
+  width: 80%;
+}
+
+.heading-2-text {
+  font-size: 2.4rem;
+  margin: unset;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr 10rem 1fr;
+}
+
+.feature-list-item {
+  display: grid;
+  align-items: start;
+  column-gap: 1.5rem;
+  grid-template-columns: auto 1fr;
+}
+
+.features-list-container {
+  grid-column-start: 3;
+}
+
+.features-description {
+  grid-column-start: 2;
+}
+
+.feature-list-index {
+  font-size: 1.05rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100px;
+  font-weight: 500;
+  background-color: var(--orange-400);
+  color: var(--gray-50);
 }
 
 /* ------------------- MEDIA QUERIES: SM
