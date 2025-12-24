@@ -37,6 +37,8 @@ Stop jumping from one service to another to communicate, store files,
 track tasks and share documents. Manage offers an all-in-one team
 productivity solution.
 
+<!-- COMPLETED THIS FAR 🎯 -->
+
 What they’ve said
 
 Anisha Li
