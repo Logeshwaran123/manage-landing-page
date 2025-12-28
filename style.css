@@ -46,7 +46,8 @@ html {
 }
 
 body {
-  background-color: var(--gray-50);
+  /* TODO: NEED TO CHECK WITH THE DESIGN */
+  background-color: #fff;
 }
 
 /* -------------- CONTAINER SECTION */
@@ -182,11 +183,43 @@ h3[class="mb-heading-3-text"] {
   display: none;
 }
 
+/* -------------- Testimonials SECTION */
+.testimonial-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  row-gap: 7rem;
+  column-gap: 2rem;
+  position: absolute;
+  left: 0;
+}
+
+.testimonial-section .heading-2-text {
+  grid-column: 1 / -1;
+}
+
+.testimonial {
+  background-color: var(--gray-50);
+  position: relative;
+  padding: 0 2rem;
+}
+
+.testimonial h3 {
+  margin-top: 3.5rem;
+}
+
+.testimonial .profile-image {
+  width: 4.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* ------------------- MEDIA QUERIES: SM
 @media screen and (max-width: 24rem) {
 }
 /* ------------------- MEDIA QUERIES: LG */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   html {
     font-size: 14px;
   }
